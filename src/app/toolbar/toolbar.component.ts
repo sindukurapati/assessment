@@ -59,7 +59,6 @@ export class ToolbarComponent implements OnInit {
   }
 
   public changeStatus(icon) {
-    console.log(icon);
     const index = this.statuses.indexOf(icon.status);
     const iconIndex = this.icons.findIndex(i => i.title === icon.title);
     if (index === this.statuses.length - 1) {

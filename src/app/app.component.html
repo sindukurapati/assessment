@@ -1,10 +1,20 @@
 <app-header></app-header>
 
 <div>
-  <tabset>
-    <tab heading="Basic title" id="tab1">Basic content</tab>
-    <tab heading="Basic Title 1">Basic content 1</tab>
-    <tab heading="Basic Title 2">Basic content 2</tab>
+  <tabset type="pills">
+    <tab 
+      *ngFor="let tabz of tabs" 
+      [heading]="tabz.title" 
+      [active]="tabz.active" 
+      (selectTab)="tabz.active = true"
+      (deselect)="tabz.active = false">
+        <app-toolbar></app-toolbar>
+        <div class="tab-content">
+          <ul class="pl-3">
+            <li>{{tabz.title}} selected</li>
+          </ul>
+          <button *ngIf="tabz.id ===3" class="btn btn-primary btn-sm" (click)="changeActiveTab()">Route to Tab1</button>
+        </div>
+    </tab>
   </tabset>
 </div>
- 
