@@ -1,1 +1,33 @@
-<p>toolbar works!</p>
+<div class="toolbar d-flex justify-content-between">
+    <div class="d-flex justify-content-around align-items-center counter-container">
+        <div (click)="getPrevItem()" class="pointer">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div>
+            <span>{{currentIndex+1}} / {{sampleItems.length}}</span>
+        </div>
+        <div (click)="getNextItem()" class="pointer">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    <div class="content-section">
+        <h3>{{selectedItem.title}}</h3>
+        <ul class="m-0 p-0 d-flex figures">
+            <li class="pr-3" *ngFor="let keyFigure of selectedItem.keyFigures">{{keyFigure}}</li>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-between">
+        <div *ngFor="let iconItem of icons" class="d-flex flex-column text-with-icon align-items-center">
+            <span>{{iconItem.title}}</span>
+            <i class="fas {{iconItem.icon}} status pointer {{iconItem.status}}"  (click)="changeStatus(iconItem)"></i>
+        </div>
+        <div class="d-flex flex-column text-with-icons">
+            <span>data</span>
+            <div class="d-flex justify-content-around">
+                <i class="fas fa-download"></i>
+                <i class="fas fa-upload"></i>
+                <i class="fas fa-sync"></i>
+            </div>
+        </div>
+    </div>
+</div>

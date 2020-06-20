@@ -1,0 +1,56 @@
+.toolbar {
+    padding: 12px 0;
+    .pointer {
+        cursor: pointer;
+    }
+    .counter-container {
+        min-width: 125px;
+        border-right: 1px solid #ddd;
+    }
+    .content-section {
+        width: 100%;
+        padding: 0 16px;
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+        .figures {
+            list-style: none;
+        }
+    }
+    .text-with-icon {
+        width: 80px;
+        text-align: center;
+        border-right: 1px solid #ddd;
+        span {
+            margin-bottom: 8px;
+        }
+        .status {
+            width: 24px;
+            border-radius: 50%;
+            padding: 4px;
+            border-color: #fff;
+        }
+        .active {
+          color: #333;  
+        }
+        .selected {
+            color: #03A9F4;
+        }
+        .toggle-on {
+            background-color: #03A9F4;
+            color: #fff;
+        }
+        .inactive {
+            color: #ddd;
+        }
+    }
+    .text-with-icons {
+        width: 120px;
+        text-align: center;
+        span {
+            margin-bottom: 8px;
+        }
+    }
+}
