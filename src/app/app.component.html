@@ -13,6 +13,9 @@
           <ul class="pl-3">
             <li>{{tabz.title}} selected</li>
           </ul>
+          <div *ngIf="tabz.id ===2">
+            <app-demo-chart></app-demo-chart>
+          </div>
           <button *ngIf="tabz.id ===3" class="btn btn-primary btn-sm" (click)="changeActiveTab()">Route to Tab1</button>
         </div>
     </tab>
