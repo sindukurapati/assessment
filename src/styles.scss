@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Nunito;
+    src: url(assets/nunito/Nunito-Black.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-BlackItalic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-Bold.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-BoldItalic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-ExtraBold.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-ExtraBoldItalic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-ExtraLight.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-ExtraLightItalic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-Italic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-LightItalic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-SemiBold.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-SemiBoldItalic.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-Light.ttf) format('truetype');
+    src: url(assets/nunito/Nunito-LightItalic.ttf) format('truetype');
+  }
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
