@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<div>
+<div class="relative">
   <tabset type="pills">
     <tab 
       *ngFor="let tabz of tabs" 
@@ -20,4 +20,16 @@
         </div>
     </tab>
   </tabset>
+  <div dropdown class="custom-dropdown">
+    <button (click)="false" id="button-basic" dropdownToggle type="button" class="btn btn-sm dropdown-toggle"
+        aria-controls="dropdown-basic">
+    {{dropdownSettings.id}}, {{dropdownSettings.name}} <span class="caret"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+    role="menu" aria-labelledby="button-basic">
+      <li *ngFor="let setting of dropdownSettings.settings">
+        <a class="dropdown-item" href="#">{{setting.name}}</a>
+      </li>
+    </ul>
+  </div>
 </div>
